@@ -1,0 +1,33 @@
+/* Universal Selector */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Element Selector */
+/* h1 {
+    font-size: 46px;
+    color: green;
+}
+p {
+    color: red;
+} */
+
+/* Class Selector */
+.bgc-red {
+    background-color: red;
+}
+.font-big {
+    font-size: 36px;
+}
+
+/* Id Selector */
+#id1 {
+    color: whitesmoke;
+    background-color: black;
+}
+
+/* Selector list */
+.class1, .class7, .class8 {
+    color: azure;
+}

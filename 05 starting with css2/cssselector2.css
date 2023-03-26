@@ -1,0 +1,25 @@
+/* Descendent selector */
+main p {
+    background-color: rgb(218, 255, 5);
+}
+
+/* Child selector */
+h1 > p {
+    color: blue;
+}
+
+/* Adjacent sibling selector */
+/* section + p {
+    color: yellowgreen;
+} */
+
+/* General sibling selector */
+section ~ p {
+    color: yellowgreen;
+}
+
+/* attribute selector */
+[target="_blank"] {
+    color: pink;
+    text-decoration: none;
+}
