@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition and tooltips</title>
+    <style>
+        div {
+            height: 100px;
+            width: 100px;
+            background-color: #000000;
+            transition: height 2s, width 2s;
+            /* transition-timing-function: ease-in; */
+            transition-delay: 0.5 ms;
+        }
+        div:hover {
+            height: 200px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Transition -->
+    <div></div>
+
+    <!-- tooltips -->
+    <p title="Hello Gulsha">Lorem, ipsum dolor.</p>
+</body>
+</html>

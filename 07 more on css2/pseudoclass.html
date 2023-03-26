@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class</title>
+    <style>
+        /* Pseudo class */
+        .hover:hover {
+            background-color: #000000;
+            color: #ffffff;
+        }
+
+        input:focus {
+            color: #ff0000;
+            background-color: #000000;
+            font-size: 25px;
+        }
+
+        /* a:hover {
+            color: #ffc0cb;
+        }
+        a:active {
+            color: #a52a2a;
+        }
+        a:visited {
+            color: #000000;
+        } */
+        /* a:first-child {
+            background-color: #ffff00;
+        } */
+        a:nth-child(2) {
+            background-color: #000000;
+            color: #ffffff;
+        }
+
+        /* Pseudo element */
+        p::after {
+            content: "-GULSHAN";
+            color: #ff00ff;
+        }
+        p::before {
+            content: "-GULSHAN";
+            color: #7700ff;
+        }
+        p::selection {
+            background-color: #000000;
+            color: #fff200;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Pseudo class -->
+    <p class="hover">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto, mollitia.
+    </p>
+    <input type="text">
+    <hr>
+    <nav>
+        <a href="https://ichips.gulshan07dev.repl.co">simple website layout</a>
+        <a href="https://www.youtube.com">youtube</a>
+        <a href="https;//www.google.com">Google</a>
+        <a href="https;//www.google.com">Google</a>
+        <a href="https;//www.google.com">Google</a>
+        <a href="https;//www.google.com">Google</a>
+    </nav>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, modi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sit inventore accusamus labore vel consequatur cumque natus. Eveniet et sed laboriosam. Voluptate amet laborum accusamus molestias. Odio sed voluptatibus totam inventore tempore aliquid, magni rem maiores impedit, dignissimos modi optio itaque quaerat expedita ex odit fugiat exercitationem commodi sunt unde.</p>
+
+</body>
+
+</html>

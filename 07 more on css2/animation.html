@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: #ff0000;
+            border-radius: 100px;
+            position: relative;
+            /* animation-name: colorchange;
+            animation-duration: 3s;
+            animation-delay: 0.5s; */
+            /* animation-iteration-count: infinite; */
+            /* animation-fill-mode: forwards; */
+            /* animation-direction: alternate-reverse; */
+            animation: colorchange 3s 0.5s infinite forwards alternate-reverse;
+        }
+        #ease {
+            animation-timing-function: ease;
+        }
+        #linear {
+            animation-timing-function: linear;
+        }
+        #ease-in {
+            animation-timing-function: ease-in;
+        }
+        #ease-out {
+            animation-timing-function: ease-out;
+        }
+
+        @keyframes colorchange {
+            0% {
+                background-color: #5900ff;
+                top: 0px;
+                left: 0px;
+            }
+            25% {
+                background-color: #ffff00;
+                top: 0px;
+                left: 300px
+            }
+            50% {
+                background-color: #000000;
+                top: 200px;
+                left: 200px;
+            }
+            75% {
+                background-color: aquamarine;
+                top: 200px;
+                right: 0px;
+            }
+            100% {
+                background-color: violet;
+                top: 0px;
+                left: 0px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="ease">ease</div>
+    <div id="linear">linear</div>
+    <div id="ease-in">ease-in</div>
+    <div id="ease-out">ease-out</div>
+
+    <p>this is going to animate</p>
+</body>
+</html>
